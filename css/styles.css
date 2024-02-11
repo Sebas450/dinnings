@@ -1,0 +1,463 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  *{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  #btn{
+    display: block;
+    padding: 5px 15px;
+    background: rgba(0, 115, 255, 0.7);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px 3px #999;
+    max-width: 220px;
+    margin: 20px auto;
+    text-decoration: none;
+    transition: .5s;
+  }
+  #btn:hover{
+    transform: scale(0.9);
+  }
+  /* estilos de cabecera */
+  header{
+    width: 100%;
+    height: 100vh;
+    padding: 1px 0 0 0 ;
+    background: url("../img/bg-header.png");
+    background-size: cover;
+    background-position: center;
+  }
+  header nav{
+    width: 80%;
+    /* height: 400px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  header nav ul{
+    display: flex;
+  }
+
+  nav ul li { 
+    list-style: none;
+    margin: 0 15px 0 15px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+  }
+
+  nav li a:hover{
+    border-bottom: 2px solid #fff;
+  }
+
+  #logo img{
+    transition: .5s;
+  }
+
+  #logo img:hover{
+    transform: scale(1.10);
+  }
+
+  #hero{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+  #hero img{
+    border-radius: 10%;
+
+  }
+
+  #hero h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: yellow;
+  }
+
+  #hero h1{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+  #hero button{
+    background-color: yellow;
+    font-size: 30px;
+    padding: 12px 30px 12px 30px;
+    border-radius: 14px;
+    color: #999;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+  }
+
+  #hero button:hover{
+    transform: scale(.9);    
+    background-color: #000;
+    color: #fff;
+  }
+
+/*main*/
+
+main {
+  width: 100%;
+  position: relative;
+}
+  /* Estilo menu */
+
+#menu{ 
+    width: 100%;
+      background-color: rgba(255, 140, 0, 0.589);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#menu h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#menu p{
+  font-size: 20px;
+}
+#menu hr {
+  max-width: 50px;
+  border-color: #ff8c00ad;
+  margin: 0 auto;
+  border-width: 3px;
+}
+
+#menu .fila{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+#menu .col-menu{
+  padding: .5%;
+  background-color: rgba(255,140,0,0.7);
+  display: flex; 
+  align-items: center;
+}
+
+#menu .textos {
+  padding-right: 10px;
+  margin-left: 10px;  
+}
+
+#menu .col-menu img{
+    transition: .5s;
+}
+
+#menu .col-menu img:hover{
+    border: transparent;
+    border-radius: 10%;
+    transform: scale(1.05);
+}
+
+
+
+/*Estilos para la seccion ensalada*/
+#ensalada{ 
+  background: url(../img/bg-menu.jpg);
+  width: 100%;
+  padding: 20px 0 100px 0 ;
+  background-size: cover;
+  background-position: center;
+  text-align: center;  
+}
+
+#ensalada h2{
+  text-align: center;
+  color: yellow;
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+#ensalada p{
+  font-size: 20px;
+}
+
+#ensalada .fila{
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+#ensalada .col-ensalada img{
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#ensalada .col-ensalada img:hover{
+  transform: rotate(360deg);
+  border-radius: 60%;
+}
+
+#ensalada .col-ensalada{
+  color: #fff;
+}
+
+/* Estilo de bebidas */
+
+#bebida{ 
+  width: 100%;
+    background-color: rgba(255, 140, 0, 0.589);
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#bebida h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#bebida p{
+  padding-bottom: 2px;
+    font-size: 20px;
+}
+#bebida hr {
+  max-width: 50px;
+  border-color: #ff8c00ad;
+  margin: 0 auto;
+  border-width: 3px;
+}
+
+#bebida .fila{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+#bebida .col-bebida h3{
+  padding-bottom: 5px;
+}
+#bebida .col-bebida{
+  padding: .75%;
+  padding-bottom: 1px;
+  background-color: rgba(255,140,0,0.7);
+}
+
+#bebida .col-bebida img{
+  transition: .5s;
+  padding-bottom: 10px;
+}
+
+#bebida .col-bebida img:hover{
+    border: transparent;
+    border-radius: 10%;
+    transform: scale(1.05);
+}
+
+/* Estilos postre */
+
+#postre {
+    background: url(../img/bg-postres.jpg);
+    width: 100%;
+    padding: 20px 0 75px 0 ;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#postre h2{
+  text-align: center;
+  color: yellow;
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+#postre p{
+  font-size: 20px;
+}
+
+#postre .fila{
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+#postre .col-postre img{
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#postre .col-postre img:hover{
+  transform: rotate(360deg);
+  border-radius: 60%;
+}
+
+#postre .col-postre{
+  color: #fff;
+}
+
+
+/* Estilo reservacion */
+
+#reserva {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 140, 0, 0.589);
+}
+
+#reserva h2{
+  padding-top: 65px;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+#reserva p{
+  padding-bottom: 30px;
+  font-weight: 500;
+}
+#reserva form{
+  width: 80%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+#reserva .fila{ 
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#reserva .fila2{ 
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  text-align: center;
+}
+#reserva input, #reserva select{
+  width: 48%;
+  padding: 8px 10px;
+  margin: 10px 0;
+}
+#reserva button{
+  background-color: rgba(255,140,0,0.7);
+  font-size: 20px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  color: #fff;
+  border-color: transparent;
+  transition: .5s;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 100px;
+  transition: .5s;
+}
+
+#reserva button:hover{
+    transform: scale(1.1);
+}
+
+/* Estilo footer */
+
+footer{
+    background: #000;
+    text-align: center;
+    padding: 50px 0; 
+}
+
+footer p{
+    padding: 10px;
+    color: #fff;
+
+}
+/* tablets ipads */
+@media screen and (min-width: 768px) and (max-width: 990px){
+
+}
+
+/* Phones */
+
+@media screen and (min-width: 320px) and (max-width: 680px) {
+  header nav{ 
+    display: block;
+    text-align: center;
+    width: 96%;
+  }
+  header ul{
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
+  #hero h2{
+    font-size: 26px;
+  }
+  #hero h1{
+    font-size: 20px;
+  }
+  #hero button{
+    font-size: 20px;
+  }
+
+  #menu .fila{
+    display: block;
+  }
+  #menu h2{
+    font-size: 30px;
+  }
+
+  #menu p{
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+  }
+
+  #menu .col-menu{
+    padding: 5%;
+    margin-bottom: 20px;
+      display: block; 
+  }
+  #ensalada .fila{
+    display: block;
+  }
+  #postre .fila{
+    display: block;
+  }
+
+  #bebida .fila{
+    display: block;
+  }
+  #bebida .col-bebida{
+    padding: 5%;
+    margin-bottom: 20px;
+  }
+
+  #reserva .fila {
+    display: block;
+  }
+
+  #reserva .fila2{
+    display: block;
+  }
+  #reserva input , #reserva select{
+    width: 100%;
+    display: block;
+  }
+
+}
